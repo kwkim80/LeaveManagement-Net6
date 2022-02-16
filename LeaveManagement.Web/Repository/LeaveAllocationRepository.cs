@@ -92,9 +92,10 @@ namespace LeaveManagement.Web.Repository
             await AddRangeAsync(allocations);
         }
 
-        public Task<LeaveAllocation?> GetEmployeeAllocation(string employeeId, int leaveTypeId)
+        public async Task<LeaveAllocation?> GetEmployeeAllocation(string employeeId, int leaveTypeId)
         {
-            throw new NotImplementedException();
+           return await context.LeaveAllocations.FirstOrDefaultAsync(q=>q.EmployeeId==employeeId
+           && q.LeaveTypeId==leaveTypeId);
         }
 
         public async Task<bool> UpdateEmployeeAllocation(LeaveAllocationEditVM model)
