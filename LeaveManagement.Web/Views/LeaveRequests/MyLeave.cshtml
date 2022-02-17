@@ -64,7 +64,8 @@
     </thead>
     <tbody>
     @foreach (var item in Model.LeaveRequests) {
-        <tr>
+            var temp = item.Id;
+            <tr>
             <td>
                 @Html.DisplayFor(modelItem => item.StartDate)
             </td>
@@ -98,10 +99,10 @@
             </td>
            
             <td>
-                @if(item.Approved == null)
+                @if(item.Approved == null && item.Cancelled!=true)
                 {
-                    <form>
-                        <input asp-form="@item.Id" type="hidden" />
+                    <form asp-action="Cancel">
+                        <input name="Id" value="@item.Id"  type="hidden" />
                         <button type="submit" class="btn btn-danger btn-sm">Cancel Request</button>
                     </form>
                 }

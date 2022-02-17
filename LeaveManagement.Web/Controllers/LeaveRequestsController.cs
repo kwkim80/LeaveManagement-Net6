@@ -19,17 +19,21 @@ namespace LeaveManagement.Web.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly ILeaveRequestRepository leaveRequestRepository;
+        private readonly ILogger<LeaveRequestsController> logger;
 
-        public LeaveRequestsController(ApplicationDbContext context, ILeaveRequestRepository leaveRequestRepository)
+        public LeaveRequestsController(ApplicationDbContext context, ILeaveRequestRepository leaveRequestRepository,
+            ILogger<LeaveRequestsController> logger)
         {
             _context = context;
             this.leaveRequestRepository = leaveRequestRepository;
+            this.logger = logger;
         }
 
         // GET: LeaveRequests
         [Authorize(Roles =Roles.Administrator)]
         public async Task<IActionResult> Index()
         {
+            throw new Exception("Testing the logging");
             //var applicationDbContext = _context.LeaveRequests.Include(l => l.LeaveType);
             var model = await leaveRequestRepository.GetAdminLeaveRequestList();
             return View(model);
@@ -59,6 +63,7 @@ namespace LeaveManagement.Web.Controllers
             }
             catch (Exception ex)
             {
+                logger.LogError(ex, "Error Approving Request");
                 throw;
             }
             return RedirectToAction(nameof(Index));
@@ -76,12 +81,12 @@ namespace LeaveManagement.Web.Controllers
             }
             catch (Exception ex)
             {
-                ModelState.AddModelError(string.Empty,ex.Message);
+                logger.LogError(ex, "Error Canceling Leave Request");
+                //ModelState.AddModelError(string.Empty,ex.Message);
                 //throw;
             }
-            //return RedirectToAction(nameof(MyLeave));
-            return View(nameof(MyLeave));
-
+            return RedirectToAction(nameof(MyLeave));
+    
 
         }
         // GET: LeaveRequests/Create
@@ -114,6 +119,7 @@ namespace LeaveManagement.Web.Controllers
             }
             catch (Exception ex)
             {
+                logger.LogError(ex, "Error Creating Leave Request");
                 ModelState.AddModelError(string.Empty, ex.Message);
             }
             
@@ -157,7 +163,7 @@ namespace LeaveManagement.Web.Controllers
                     _context.Update(leaveRequest);
                     await _context.SaveChangesAsync();
                 }
-                catch (DbUpdateConcurrencyException)
+                catch (DbUpdateConcurrencyException ex)
                 {
                     if (!LeaveRequestExists(leaveRequest.Id))
                     {
@@ -165,7 +171,8 @@ namespace LeaveManagement.Web.Controllers
                     }
                     else
                     {
-                        throw;
+                        logger.LogError(ex, "Error Editing Leave Request");
+                       throw;
                     }
                 }
                 return RedirectToAction(nameof(Index));
