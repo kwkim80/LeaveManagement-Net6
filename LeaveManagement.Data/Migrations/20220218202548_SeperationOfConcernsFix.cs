@@ -232,8 +232,8 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "a5ecc3f5-a0b6-47af-9792-62c24ae477f8", "Administrator", "ADMINISTRATOR" },
-                    { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "d9306d6e-10a6-4734-a095-bdc8c684ca3b", "User", "USER" }
+                    { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "250bb67f-dfc7-4d86-ba05-9b67d59e9b5d", "Administrator", "ADMINISTRATOR" },
+                    { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "d05b242f-5a6f-442b-9eb8-6ece533770fb", "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -241,8 +241,8 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DateJoined", "DateOfBirth", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TaxId", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "3f4631bd-f907-4409-b416-ba356312e659", 0, "121e355d-1d72-46e2-83bc-af5a1e806e68", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAEAACcQAAAAEKzM2FjO8ndYjWyZYGkEpSYhGYHrcrTVOB9HU+laJZ7nUPyfew4liwCf8yz0pHY4Gw==", null, false, "c2ffd443-781f-4442-accf-7430320d548b", null, false, "user@localhost.com" },
-                    { "408aa945-3d84-4421-8342-7269ec64d949", 0, "8c93b2d0-d0ba-43a3-bc9a-75b7c4839349", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAEAACcQAAAAEOHo94JiSH5MIqy8m9MKNAUF4vqXjbumJrbqVDkF3JBSgoFOe/WSUdWZhleVlAH0AA==", null, false, "94eef91d-5d97-4574-8fd8-7b1bf2ad119f", null, false, "admin@localhost.com" }
+                    { "3f4631bd-f907-4409-b416-ba356312e659", 0, "16b65599-ab9a-4b38-9521-70ef3e3818d4", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAEAACcQAAAAEJdxrGa6nf1mEeJZvC27lM+Q24mfapD3pNEk+JYu9q6WgvWBe6asuZSloWbQNiVo7g==", null, false, "a23eab10-8dfe-4bac-94ae-f10bceda00da", null, false, "user@localhost.com" },
+                    { "408aa945-3d84-4421-8342-7269ec64d949", 0, "ca1f4454-ef8a-4f60-b267-e0654eda713e", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAEAACcQAAAAEIXBW8Ghf+D2ZwYxaVZ90WOPcRI2ZEptQGsMI8sRdgPXDAg7S8kesEzFNozbkfCGxw==", null, false, "e5159e11-aa6d-4842-907a-ae9ef2bb1e7e", null, false, "admin@localhost.com" }
                 });
 
             migrationBuilder.InsertData(
