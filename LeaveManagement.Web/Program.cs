@@ -1,4 +1,4 @@
-using LeaveManagement.Web.Configurations;
+using LeaveManagement.Application.Configurations;
 using LeaveManagement.Application.Contracts;
 using LeaveManagement.Data;
 using LeaveManagement.Application.Repository;
