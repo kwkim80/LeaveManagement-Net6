@@ -232,8 +232,8 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "cac43a7e-f7bb-4458-babf-1add431ccbbf", "8a3f840b-090e-47d2-aed6-8915dc740579", "Administrator", "ADMINISTRATOR" },
-                    { "cac43a8e-f7cb-4148-baaf-1acb431ccbbf", "40103bf7-4d28-4ab8-91a2-2bc37d5895c1", "User", "ADMINISTRATOR" }
+                    { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "a5ecc3f5-a0b6-47af-9792-62c24ae477f8", "Administrator", "ADMINISTRATOR" },
+                    { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "d9306d6e-10a6-4734-a095-bdc8c684ca3b", "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -241,19 +241,19 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DateJoined", "DateOfBirth", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TaxId", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "1d48f016-fb16-4255-b83a-477f112a9d42", 0, "21681746-b96a-4b84-baae-84c4d5488dfc", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@gmail.com", true, "System", "User", false, null, "USER@GMAIL.COM", "USER@GMAIL.COM", "AQAAAAEAACcQAAAAEN8aWUklYIVB/OBokKyWMls52Gzm7iZTfUSbznHz3DAy/bLlG+2mbTJzUzWa8iK5Nw==", null, false, "4ee07684-9e30-4bd7-91ad-ae92b88f0268", null, false, "user@gmail.com" },
-                    { "ce096625-302c-4e93-ab09-9971a45301cc", 0, "cdf63785-77bc-4268-a116-211b6c7b0ec6", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@gmail.com", true, "System", "Admin", false, null, "ADMIN@GMAIL.COM", "ADMIN@GMAIL.COM", "AQAAAAEAACcQAAAAEDQ7bvM84JqAeef2A2iIyyfUXFpJbfQCvLKjkR8Hangzs+/CZcrm3qzAilD0tCwyFg==", null, false, "9416cb99-fb54-439e-8c8f-ef2dcf90e793", null, false, "admin@gmail.com" }
+                    { "3f4631bd-f907-4409-b416-ba356312e659", 0, "121e355d-1d72-46e2-83bc-af5a1e806e68", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAEAACcQAAAAEKzM2FjO8ndYjWyZYGkEpSYhGYHrcrTVOB9HU+laJZ7nUPyfew4liwCf8yz0pHY4Gw==", null, false, "c2ffd443-781f-4442-accf-7430320d548b", null, false, "user@localhost.com" },
+                    { "408aa945-3d84-4421-8342-7269ec64d949", 0, "8c93b2d0-d0ba-43a3-bc9a-75b7c4839349", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAEAACcQAAAAEOHo94JiSH5MIqy8m9MKNAUF4vqXjbumJrbqVDkF3JBSgoFOe/WSUdWZhleVlAH0AA==", null, false, "94eef91d-5d97-4574-8fd8-7b1bf2ad119f", null, false, "admin@localhost.com" }
                 });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "cac43a8e-f7cb-4148-baaf-1acb431ccbbf", "1d48f016-fb16-4255-b83a-477f112a9d42" });
+                values: new object[] { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "3f4631bd-f907-4409-b416-ba356312e659" });
 
             migrationBuilder.InsertData(
                 table: "AspNetUserRoles",
                 columns: new[] { "RoleId", "UserId" },
-                values: new object[] { "cac43a7e-f7bb-4458-babf-1add431ccbbf", "ce096625-302c-4e93-ab09-9971a45301cc" });
+                values: new object[] { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "408aa945-3d84-4421-8342-7269ec64d949" });
 
             migrationBuilder.CreateIndex(
                 name: "IX_AspNetRoleClaims_RoleId",

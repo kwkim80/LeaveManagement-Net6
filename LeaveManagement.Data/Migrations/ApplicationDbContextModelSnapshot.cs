@@ -104,43 +104,43 @@ namespace LeaveManagement.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "ce096625-302c-4e93-ab09-9971a45301cc",
+                            Id = "408aa945-3d84-4421-8342-7269ec64d949",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "cdf63785-77bc-4268-a116-211b6c7b0ec6",
+                            ConcurrencyStamp = "8c93b2d0-d0ba-43a3-bc9a-75b7c4839349",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "admin@gmail.com",
+                            Email = "admin@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
                             Lastname = "Admin",
                             LockoutEnabled = false,
-                            NormalizedEmail = "ADMIN@GMAIL.COM",
-                            NormalizedUserName = "ADMIN@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEDQ7bvM84JqAeef2A2iIyyfUXFpJbfQCvLKjkR8Hangzs+/CZcrm3qzAilD0tCwyFg==",
+                            NormalizedEmail = "ADMIN@LOCALHOST.COM",
+                            NormalizedUserName = "ADMIN@LOCALHOST.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEOHo94JiSH5MIqy8m9MKNAUF4vqXjbumJrbqVDkF3JBSgoFOe/WSUdWZhleVlAH0AA==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "9416cb99-fb54-439e-8c8f-ef2dcf90e793",
+                            SecurityStamp = "94eef91d-5d97-4574-8fd8-7b1bf2ad119f",
                             TwoFactorEnabled = false,
-                            UserName = "admin@gmail.com"
+                            UserName = "admin@localhost.com"
                         },
                         new
                         {
-                            Id = "1d48f016-fb16-4255-b83a-477f112a9d42",
+                            Id = "3f4631bd-f907-4409-b416-ba356312e659",
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "21681746-b96a-4b84-baae-84c4d5488dfc",
+                            ConcurrencyStamp = "121e355d-1d72-46e2-83bc-af5a1e806e68",
                             DateJoined = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
                             DateOfBirth = new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "user@gmail.com",
+                            Email = "user@localhost.com",
                             EmailConfirmed = true,
                             Firstname = "System",
                             Lastname = "User",
                             LockoutEnabled = false,
-                            NormalizedEmail = "USER@GMAIL.COM",
-                            NormalizedUserName = "USER@GMAIL.COM",
-                            PasswordHash = "AQAAAAEAACcQAAAAEN8aWUklYIVB/OBokKyWMls52Gzm7iZTfUSbznHz3DAy/bLlG+2mbTJzUzWa8iK5Nw==",
+                            NormalizedEmail = "USER@LOCALHOST.COM",
+                            NormalizedUserName = "USER@LOCALHOST.COM",
+                            PasswordHash = "AQAAAAEAACcQAAAAEKzM2FjO8ndYjWyZYGkEpSYhGYHrcrTVOB9HU+laJZ7nUPyfew4liwCf8yz0pHY4Gw==",
                             PhoneNumberConfirmed = false,
-                            SecurityStamp = "4ee07684-9e30-4bd7-91ad-ae92b88f0268",
+                            SecurityStamp = "c2ffd443-781f-4442-accf-7430320d548b",
                             TwoFactorEnabled = false,
-                            UserName = "user@gmail.com"
+                            UserName = "user@localhost.com"
                         });
                 });
 
@@ -279,17 +279,17 @@ namespace LeaveManagement.Data.Migrations
                     b.HasData(
                         new
                         {
-                            Id = "cac43a7e-f7bb-4458-babf-1add431ccbbf",
-                            ConcurrencyStamp = "8a3f840b-090e-47d2-aed6-8915dc740579",
+                            Id = "cac43a6e-f7bb-4448-baaf-1add431ccbbf",
+                            ConcurrencyStamp = "a5ecc3f5-a0b6-47af-9792-62c24ae477f8",
                             Name = "Administrator",
                             NormalizedName = "ADMINISTRATOR"
                         },
                         new
                         {
-                            Id = "cac43a8e-f7cb-4148-baaf-1acb431ccbbf",
-                            ConcurrencyStamp = "40103bf7-4d28-4ab8-91a2-2bc37d5895c1",
+                            Id = "cac43a7e-f7cb-4148-baaf-1acb431eabbf",
+                            ConcurrencyStamp = "d9306d6e-10a6-4734-a095-bdc8c684ca3b",
                             Name = "User",
-                            NormalizedName = "ADMINISTRATOR"
+                            NormalizedName = "USER"
                         });
                 });
 
@@ -384,13 +384,13 @@ namespace LeaveManagement.Data.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = "ce096625-302c-4e93-ab09-9971a45301cc",
-                            RoleId = "cac43a7e-f7bb-4458-babf-1add431ccbbf"
+                            UserId = "408aa945-3d84-4421-8342-7269ec64d949",
+                            RoleId = "cac43a6e-f7bb-4448-baaf-1add431ccbbf"
                         },
                         new
                         {
-                            UserId = "1d48f016-fb16-4255-b83a-477f112a9d42",
-                            RoleId = "cac43a8e-f7cb-4148-baaf-1acb431ccbbf"
+                            UserId = "3f4631bd-f907-4409-b416-ba356312e659",
+                            RoleId = "cac43a7e-f7cb-4148-baaf-1acb431eabbf"
                         });
                 });
 
