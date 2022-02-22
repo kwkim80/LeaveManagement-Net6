@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace LeaveManagement.Data.Migrations
 {
-    public partial class SeperationOfConcernsFix : Migration
+    public partial class SeparationOfConcernsFix : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -232,8 +232,8 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "250bb67f-dfc7-4d86-ba05-9b67d59e9b5d", "Administrator", "ADMINISTRATOR" },
-                    { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "d05b242f-5a6f-442b-9eb8-6ece533770fb", "User", "USER" }
+                    { "cac43a6e-f7bb-4448-baaf-1add431ccbbf", "9551db5c-70f6-4bd9-9c68-9c08c725b8be", "Administrator", "ADMINISTRATOR" },
+                    { "cac43a7e-f7cb-4148-baaf-1acb431eabbf", "9c660dc3-eff0-4f0c-90a4-43353210b370", "User", "USER" }
                 });
 
             migrationBuilder.InsertData(
@@ -241,8 +241,8 @@ namespace LeaveManagement.Data.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "DateJoined", "DateOfBirth", "Email", "EmailConfirmed", "Firstname", "Lastname", "LockoutEnabled", "LockoutEnd", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "TaxId", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { "3f4631bd-f907-4409-b416-ba356312e659", 0, "16b65599-ab9a-4b38-9521-70ef3e3818d4", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAEAACcQAAAAEJdxrGa6nf1mEeJZvC27lM+Q24mfapD3pNEk+JYu9q6WgvWBe6asuZSloWbQNiVo7g==", null, false, "a23eab10-8dfe-4bac-94ae-f10bceda00da", null, false, "user@localhost.com" },
-                    { "408aa945-3d84-4421-8342-7269ec64d949", 0, "ca1f4454-ef8a-4f60-b267-e0654eda713e", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAEAACcQAAAAEIXBW8Ghf+D2ZwYxaVZ90WOPcRI2ZEptQGsMI8sRdgPXDAg7S8kesEzFNozbkfCGxw==", null, false, "e5159e11-aa6d-4842-907a-ae9ef2bb1e7e", null, false, "admin@localhost.com" }
+                    { "3f4631bd-f907-4409-b416-ba356312e659", 0, "b0a59835-fbbc-436e-96d2-e0dc1acb016c", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "user@localhost.com", true, "System", "User", false, null, "USER@LOCALHOST.COM", "USER@LOCALHOST.COM", "AQAAAAEAACcQAAAAELB9wvv95Krbtq7w2AjO+Q2DIUiGEMB3eP1UUu4Wzt4Oox4zxuZM3iNREkeUx1jSWw==", null, false, "3b832f99-e0f2-4d86-b86f-ca63d5a9cb1d", null, false, "user@localhost.com" },
+                    { "408aa945-3d84-4421-8342-7269ec64d949", 0, "58dcb61b-c626-4156-8b09-3ce767b8b53b", new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), new DateTime(1, 1, 1, 0, 0, 0, 0, DateTimeKind.Unspecified), "admin@localhost.com", true, "System", "Admin", false, null, "ADMIN@LOCALHOST.COM", "ADMIN@LOCALHOST.COM", "AQAAAAEAACcQAAAAEJcO33hanKm3sIV38AeLjafHnSF7kkJs24tsYQzomELvbeosJvfwx5wOrlXnK4MuyQ==", null, false, "250c104c-ab3d-41b4-8ba1-ce85a6306cd0", null, false, "admin@localhost.com" }
                 });
 
             migrationBuilder.InsertData(
