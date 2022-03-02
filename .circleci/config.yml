@@ -11,7 +11,7 @@ jobs:
       - checkout
       - restore_cache:
           keys:
-            - dotnet-packages-v1-{{ checksum "\LeaveManagement.Web\LeaveManagement.Web.csproj" }}
+            - dotnet-packages-v1-{{ checksum "LeaveManagement.Web.csproj" }}
       - run:
           name: "Install project dependencies"
           command: dotnet.exe restore
